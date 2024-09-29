@@ -1,0 +1,440 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #080808; 
+    color: #fff; 
+    padding: 0 5px; 
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 5px;
+}
+
+/* Header and Sections */
+header, section {
+    margin-bottom: 20px; 
+    padding: 10px 0; 
+    border: none; 
+}
+
+/* Nav Bar */
+.navbar {
+    padding: 5px 5px; 
+    border: none;
+}
+
+/* Home Section */
+.home {
+    padding: 30px 5px;
+    border: none; 
+}
+
+/* About Section */
+.about {
+    padding: 30px 5px; 
+    border: none;
+}
+
+/* Services Section */
+.services {
+    padding: 30px 5px; 
+    border: none;
+}
+
+/* Contact Section */
+.contact {
+    padding: 30px 5px; 
+    border: none; 
+}
+
+/* Footer */
+footer {
+    padding: 5px 0;
+    text-align: center;
+    border: none;
+    margin: 20px 20px;
+}
+
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #101010;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #1e90ff;
+    background-color: #222;
+    border-radius: 4px;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    background-color: #101010;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+.home-description {
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.home .btn {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home .btn:hover {
+    background-color: #fff;
+    color: #1e90ff;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home-description {
+        font-size: 18px;
+    }
+
+    .home .btn {
+        font-size: 16px;
+    }
+}
+
+/* About Section */
+.about {
+    background-color: #101010;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-description {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-item ul {
+    list-style: none;
+    padding-left: 0;
+    color: #ccc;
+}
+
+.about-item ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.about-item ul li:hover {
+    color: #1e90ff;
+}
+
+/* Profile Photo */
+.about-photo {
+    flex: 0 0 300px; 
+    text-align: center;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1e90ff;
+    transition: transform 0.3s;
+}
+
+.about-photo img:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-photo {
+        margin-top: 40px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about-item h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* Services Section */
+.services {
+    background-color: #101010;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.services-description {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid Layout for Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+.service-item {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background-color: #222;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 40px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #101010;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    background-color: #1a1a1a;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #1e90ff;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #3aa0ff;
+    transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+    color: #1e90ff;
+    transform: scale(1.2);
+}
+
+
