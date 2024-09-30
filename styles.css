@@ -7,9 +7,11 @@
 }
 
 body {
+    margin-left: 30px;
+    margin-right: 30px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #080808; 
+    background-color: #000000; 
     color: #fff; 
     padding: 0 5px; 
 }
@@ -64,6 +66,7 @@ footer {
     text-align: center;
     border: none;
     margin: 20px 20px;
+    background-color: #1a1a1a;
 }
 
 
@@ -87,7 +90,7 @@ footer {
 
 .navbar .logo a {
     font-size: 24px;
-    color: #1e90ff;
+    color: #3cff1e;
     text-decoration: none;
 }
 
@@ -110,7 +113,7 @@ footer {
 }
 
 .navbar .nav-links a:hover {
-    color: #1e90ff;
+    color: #3cff1e;
     background-color: #222;
     border-radius: 4px;
 }
@@ -118,7 +121,7 @@ footer {
 /* Home Section */
 .home {
     height: 100vh;
-    background-color: #101010;
+    background-color: #000000;
     color: #fff;
     display: flex;
     align-items: center;
@@ -129,7 +132,7 @@ footer {
 .home h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #1e90ff;
+    color: #3cff1e;
 }
 
 .home-description {
@@ -139,7 +142,7 @@ footer {
 }
 
 .home .btn {
-    background-color: #1e90ff;
+    background-color: #3cff1e;
     color: #fff;
     padding: 12px 24px;
     font-size: 18px;
@@ -150,7 +153,7 @@ footer {
 
 .home .btn:hover {
     background-color: #fff;
-    color: #1e90ff;
+    color: #3cff1e;
     transform: scale(1.05);
 }
 
@@ -176,7 +179,7 @@ footer {
 
 /* About Section */
 .about {
-    background-color: #101010;
+    background-color: #000000;
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -233,7 +236,7 @@ footer {
 }
 
 .about-item ul li:hover {
-    color: #1e90ff;
+    color: #3cff1e;
 }
 
 /* Profile Photo */
@@ -246,7 +249,7 @@ footer {
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #1e90ff;
+    border: 5px solid #1eff7c;
     transition: transform 0.3s;
 }
 
@@ -277,7 +280,7 @@ footer {
 
 /* Services Section */
 .services {
-    background-color: #101010;
+    background-color: #000000;
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -332,7 +335,7 @@ footer {
 
 .service-icon {
     font-size: 40px;
-    color: #1e90ff;
+    color: #3cff1e;
     margin-bottom: 20px;
     display: block;
 }
@@ -359,7 +362,8 @@ footer {
 
 /* Contact Section */
 .contact {
-    background-color: #101010;
+    background-color: #000000;
+    border-radius: 20px;
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -396,7 +400,7 @@ footer {
 .form-group input:focus, 
 .form-group textarea:focus {
     outline: none;
-    border-color: #1e90ff;
+    border-color:#3cff1e;
     background-color: #1a1a1a;
 }
 
@@ -405,7 +409,7 @@ textarea {
 }
 
 .btn-submit {
-    background-color: #1e90ff;
+    background-color: #3cff1e;
     border: none;
     color: #fff;
     padding: 15px 30px;
@@ -416,7 +420,7 @@ textarea {
 }
 
 .btn-submit:hover {
-    background-color: #3aa0ff;
+    background-color: #3cff1e;
     transform: scale(1.05);
 }
 
@@ -433,7 +437,7 @@ textarea {
 }
 
 .social-media a:hover {
-    color: #1e90ff;
+    color: #3cff1e;
     transform: scale(1.2);
 }
 
